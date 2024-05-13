@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { uppercaseString } from "../utils/uppercaseString";
 
 const Navbar = ({ isLoggedIn }) => {
