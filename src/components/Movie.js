@@ -1,8 +1,8 @@
-const Movie = ({ movie }) => {
+const Movie = ({ movie, onMovieSelect }) => {
   const imgURL = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
 
   return (
-    <div style={movieStyle}>
+    <div style={movieStyle} onClick={() => onMovieSelect(movie)}>
       <img src={imgURL} alt={movie.title} style={imageStyle} />
       <div style={titleStyle}>{movie.title}</div>
     </div>
